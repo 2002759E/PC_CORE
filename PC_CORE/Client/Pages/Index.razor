@@ -1,6 +1,18 @@
 ﻿@page "/"
-    <h1>PC CORE</h1>
-    <ItemSell />
+<AuthorizeView>
+    <Authorized>
+        <p style="text-align:left;">
+            <h1 style="display: inline-block;">PC CORE</h1>
+            <span style="float:right;">
+                <NavLink class="nav-link" href="sell">
+                    <button style="padding: 10px; border-radius: 10px; margin: 20px; background-color: #f44336; ">Sell</button>
+                </NavLink>
+            </span>
+        </p>
+    </Authorized>
+    <NotAuthorized>
+    </NotAuthorized>
+</AuthorizeView>
     <h3>FEATURED</h3>
     <FeaturedItemList />
     <h3>SLASHED PRICES</h3>
