@@ -11,5 +11,7 @@ namespace PC_CORE.Shared.Domain
         public string Name { get; set; }
         public string dog { get; set; }
 
+        public string cat { get; set; }
+
     }
 }
