@@ -9,6 +9,7 @@ namespace PC_CORE.Shared.Domain
     public class Category : BaseDomainModel
     {
         public string Name { get; set; }
+        public string dog { get; set; }
 
     }
 }
